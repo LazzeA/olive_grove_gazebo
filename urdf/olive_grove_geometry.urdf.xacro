@@ -24,6 +24,12 @@
         <mesh filename="package://olive_grove_gazebo/meshes/leaves_grove.dae"/>
       </geometry>
     </visual>
+    <visual>
+      <origin xyz="-35 -37 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://olive_grove_gazebo/meshes/arrow.dae"/>
+      </geometry>
+    </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 1.5707963267948966"/>
       <geometry>
@@ -42,6 +48,18 @@
       <origin xyz="0 0 0" rpy="0 0 1.5707963267948966"/>
       <geometry>
         <mesh filename="package://olive_grove_gazebo/meshes/trunks_grove.dae"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 1.5707963267948966"/>
+      <geometry>
+        <mesh filename="package://olive_grove_gazebo/meshes/leaves_grove.dae"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="-35 -37 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://olive_grove_gazebo/meshes/arrow.dae"/>
       </geometry>
     </collision>
   </link>

@@ -1,10 +1,10 @@
 <launch>
-    <param name="orchard_geom" command="$(find xacro)/xacro --inorder '$(find olive_grove_gazebo)/urdf/olive_grove_geometry.urdf.xacro'" />
+    <param name="olive_grove_geom" command="$(find xacro)/xacro --inorder '$(find olive_grove_gazebo)/urdf/olive_grove_geometry.urdf.xacro'" />
 
     <arg name="platform" default="warthog" />
 
-    <arg name="robot_x" default="-11.0"/>
-    <arg name="robot_y" default="9.0"/>
+    <arg name="robot_x" default="-35.0"/>
+    <arg name="robot_y" default="-35.0"/>
     <arg name="robot_z" default="0.2"/>
     <arg name="robot_yaw" default="1.5707963267948966" />
 
@@ -25,8 +25,8 @@
       <arg name="world_name" value="$(arg world_name)" />
     </include>
 
-    <node name="orchard_gazebo_spawner" pkg="gazebo_ros" type="spawn_model"
-      args="-urdf -model olive_grove_geometry -param orchard_geom -x $(arg world_x) -y $(arg world_y) -z $(arg world_z) -Y $(arg world_yaw)" />
+    <node name="olive_grove_gazebo_spawner" pkg="gazebo_ros" type="spawn_model"
+      args="-urdf -model olive_grove_geometry -param olive_grove_geom -x $(arg world_x) -y $(arg world_y) -z $(arg world_z) -Y $(arg world_yaw)" />
 
     <include file="$(find olive_grove_gazebo)/launch/spawn_$(arg platform).launch">
       <arg name="x" value="$(arg robot_x)"/>
