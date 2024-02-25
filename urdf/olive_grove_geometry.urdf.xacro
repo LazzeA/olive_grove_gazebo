@@ -50,12 +50,15 @@
         <mesh filename="package://olive_grove_gazebo/meshes/trunks_grove.dae"/>
       </geometry>
     </collision>
+ <!-- Collison has been added to the leaves, if you need to consider them "transparent" comment out this section
+    ____________-->
     <collision>
       <origin xyz="0 0 0" rpy="0 0 1.5707963267948966"/>
       <geometry>
         <mesh filename="package://olive_grove_gazebo/meshes/leaves_grove.dae"/>
       </geometry>
     </collision>
+<!-- __________ -->
     <collision>
       <origin xyz="-35 -37 0" rpy="0 0 0"/>
       <geometry>
