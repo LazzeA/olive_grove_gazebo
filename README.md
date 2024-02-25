@@ -35,11 +35,11 @@ to be above ground-level; otherwise the robot may fall through the ground plane 
 Olive Grove World
 -------------------------------------------------------------
 
-![Olive Grove](olive_grove_gazebo/docs/olive_grove_world.png "Olive Grove World")
+![Olive Grove](docs/olive_grove.png "Olive Grove World")
 
-![Olive Grove](olive_grove_gazebo/docs/view1.png)
+![](docs/view1.png)
 
 This is an outdoor world with 100 olive trees arranged in a square grid. The ground is flat with a small structural noise for simulating the deformation of a terrain. The space between the trees is about 6 meters in all directions. An arrow has also been added to prevent orientation issues, it is also helpful during localization, pointing at robot spawning point.
 
-![Olive Grove](olive_grove_gazebo/docs/view2.png)
+![](docs/view2.png)
 
